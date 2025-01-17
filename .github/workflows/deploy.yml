@@ -1,25 +1,29 @@
 name: Deploy to GitHub Pages using GitHub Actions
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  build: #jobsのdeployのneedsで参照
+  build:
     name: Build to GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: npm
-      - name: Install dependencies
-        run: npm install --frozen-lockfile
       - name: Build website
-        run: npm run build
+        run: |
+          # ここにビルド手順を記述します
+          # 例: 静的ファイルを生成するコマンドを記述します
+          # 例えば、もしビルドが静的HTMLを生成する場合は、次のようなコマンドに変更します
+          # 例: npm や yarn を使わない場合は手動でビルド作業を行います
+          # e.g. build-scripts/run-build.sh などのスクリプトを実行する
+          # ここでは例として、`build` フォルダに静的ファイルを出力する想定
+          echo "Building the website..."
+          mkdir build
+          cp -r * build/
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -27,7 +31,7 @@ jobs:
 
   deploy:
     name: Deploy to GitHub Pages
-    needs: build #jobsの「build」を指定
+    needs: build
     permissions:
       pages: write
       id-token: write
@@ -39,44 +43,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-# name: Deploy to GitHub Pages
-
-# on:
-#   push:
-#     branches:
-#       - main
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v4
-#         with:
-#           fetch-depth: 0
-#       - uses: actions/setup-node@v4
-#         with:
-#           node-version: 18
-#           cache: npm
-#       - name: Install dependencies
-#         run: npm install --frozen-lockfile
-#       - name: Build website
-#         run: npm run build
-#       - uses: actions/upload-pages-artifact@v3
-#         with:
-#           path: build
-
-#   deploy:
-#     name: Deploy to GitHub Pages
-#     needs: build
-#     permissions:
-#       pages: write
-#       id-token: write
-#     environment:
-#       name: github-pages
-#       url: ${{ steps.deployment.outputs.page_url }}
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Deploy to GitHub Pages
-#         id: deployment
-#         uses: actions/deploy-pages@v3
