@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Ws5p672p3ITMvYxdtUtY-4" value="TitleScene" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Ws5p672p3ITMvYxdtUtY-4" value="TitleScene" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="130" y="30" width="340" height="1020" as="geometry" />
         </mxCell>
         <mxCell id="Ws5p672p3ITMvYxdtUtY-8" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="Ws5p672p3ITMvYxdtUtY-4">
@@ -62,7 +62,7 @@
         <mxCell id="Ws5p672p3ITMvYxdtUtY-94" value="タイトルへ戻る" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Ws5p672p3ITMvYxdtUtY-4">
           <mxGeometry x="220" y="360" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Ws5p672p3ITMvYxdtUtY-5" value="ShopScene" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Ws5p672p3ITMvYxdtUtY-5" value="ShopScene" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="470" y="30" width="350" height="1020" as="geometry" />
         </mxCell>
         <mxCell id="Ws5p672p3ITMvYxdtUtY-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ws5p672p3ITMvYxdtUtY-5" source="Ws5p672p3ITMvYxdtUtY-22" target="Ws5p672p3ITMvYxdtUtY-29">
@@ -104,7 +104,7 @@
         <mxCell id="Ws5p672p3ITMvYxdtUtY-38" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ワープゲートに入る&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;GameDataクラスでmoney,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;スキルセットの値を保持&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Ws5p672p3ITMvYxdtUtY-5">
           <mxGeometry x="200" y="170" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Ws5p672p3ITMvYxdtUtY-6" value="StageScene" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Ws5p672p3ITMvYxdtUtY-6" value="StageScene" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="820" y="30" width="345" height="1020" as="geometry" />
         </mxCell>
         <mxCell id="Ws5p672p3ITMvYxdtUtY-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ws5p672p3ITMvYxdtUtY-6" source="Ws5p672p3ITMvYxdtUtY-45" target="Ws5p672p3ITMvYxdtUtY-55">
